@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Estilisto — Ideas de outfits de Pinterest</title>
+<style>
+  :root { --red: #E60023; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, system-ui, "Segoe UI", Roboto, sans-serif; color: #111; line-height: 1.6; }
+  header { background: var(--red); color: #fff; padding: 64px 24px; text-align: center; }
+  header h1 { margin: 0 0 8px; font-size: 40px; }
+  header p { margin: 0; opacity: .95; font-size: 18px; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 24px; }
+  h2 { font-size: 20px; margin-top: 32px; }
+  ul { padding-left: 20px; }
+  a { color: var(--red); }
+  footer { border-top: 1px solid #eee; padding: 24px; text-align: center; color: #666; font-size: 14px; }
+  .pill { display: inline-block; border: 2px solid var(--red); color: var(--red); border-radius: 999px; padding: 10px 20px; font-weight: 700; text-decoration: none; margin-top: 16px; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Estilisto</h1>
+    <p>Pregunta qué ponerte y recibe ideas reales de Pinterest.</p>
+    <a class="pill" href="privacy.html">Política de privacidad</a>
+  </header>
+  <main>
+    <h2>¿Qué hace Estilisto?</h2>
+    <p>
+      Estilisto se conecta a tu cuenta de Pinterest y te responde qué outfits ponerte
+      según la ocasión: una boda, el trabajo, una cita, la playa y más. Escribes tu
+      pregunta y la app te muestra una cuadrícula de ideas tomadas de Pinterest.
+    </p>
+    <h2>Cómo funciona</h2>
+    <ul>
+      <li>Inicias sesión en Pinterest y autorizas la app (OAuth oficial).</li>
+      <li>Escribes, por ejemplo, “¿qué me pongo para una boda de día?”.</li>
+      <li>La app interpreta tu pregunta y busca ideas en Pinterest.</li>
+      <li>Tocas un resultado y se abre en Pinterest.</li>
+    </ul>
+    <h2>Privacidad</h2>
+    <p>
+      No vendemos tus datos. Usamos la API oficial de Pinterest y puedes desconectar tu
+      cuenta cuando quieras. Lee la <a href="privacy.html">política de privacidad</a>.
+    </p>
+  </main>
+  <footer>
+    <p>© <span id="year"></span> Estilisto · Contacto: <a href="mailto:hola@estilisto.app">hola@estilisto.app</a></p>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
